@@ -7,6 +7,14 @@
     {
       "id": "Post Creation",
       "isDefault": false
+    },
+    {
+      "id": "SalesDashboard",
+      "isDefault": false
+    },
+    {
+      "id": "AdsDashboard",
+      "isDefault": false
     }
   ],
   "viewMode": false,
