@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getAds",
+    "name": "getSponsorships",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/advertisements"
+        "url": "web:4000/s/sponsorships/{{SponsorshipCompanySelector.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -45,13 +45,15 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "SponsorshipCompanySelector.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "AdsDashboard_getAds",
+  "id": "AdsDashboard_getSponsorships",
   "deleted": false,
-  "gitSyncId": "643f346555c4d051342d79e8_643f453167dcf9058096ce5a"
+  "gitSyncId": "643f346555c4d051342d79e8_643f531c67dcf9058096ce76"
 }
