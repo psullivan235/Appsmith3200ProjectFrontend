@@ -11,6 +11,10 @@
     {
       "id": "SalesDashboard",
       "isDefault": false
+    },
+    {
+      "id": "AdsDashboard",
+      "isDefault": false
     }
   ],
   "viewMode": false,
