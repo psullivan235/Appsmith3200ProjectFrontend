@@ -1,44 +1,43 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "Post Creation",
+    "slug": "post-creation",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 870,
           "containerStyle": "none",
-          "snapRows": 124,
+          "snapRows": 86,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 77,
-          "minHeight": 1292,
-          "dynamicTriggerPathList": [],
+          "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": []
         },
         "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "Post Creation",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "642ecfe76032737b1d4234ae_642ecfe76032737b1d4234b0"
+  "gitSyncId": "643f1a6ca5584211b6af66af_643f1c0ba5584211b6af66bb"
 }
