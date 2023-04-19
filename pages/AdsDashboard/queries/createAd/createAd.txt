@@ -1,0 +1,6 @@
+{
+	"Name": {{NewName.inputText}},
+	"Description": {{NewDescription.inputText}},
+	"Content": {{NewContent.inputText}},
+	"CompanyID": {{CompanySelector.selectedOptionValue}}
+}

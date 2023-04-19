@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getAd",
+    "name": "getCompanies",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/advertisements/{{AdSelector.selectedOptionValue}}"
+        "url": "web:4000/s/companies"
       },
       "invalids": [],
       "messages": [],
@@ -37,23 +37,17 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "AdSelector.selectedOptionValue"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "AdsDashboard_getAd",
+  "id": "AdsDashboard_getCompanies",
   "deleted": false,
-  "gitSyncId": "643f346555c4d051342d79e8_643f485867dcf9058096ce5e"
+  "gitSyncId": "643f346555c4d051342d79e8_643f4ebe67dcf9058096ce67"
 }
