@@ -43,6 +43,7 @@
                 }
               ],
               "isDisabled": false,
+              "onDateSelected": "{{dailyActiveUsers.run(() => {}, () => {}); totalPostViewsPerDay.run(() => {}, () => {});\npostsPerDay.run(() => {}, () => {})}}",
               "isRequired": false,
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -58,6 +59,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "dateFormat"
+                },
+                {
+                  "key": "onDateSelected"
                 }
               ],
               "displayName": "DatePicker",
@@ -69,11 +73,15 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onDateSelected"
+                }
+              ],
               "labelPosition": "Top",
               "key": "loojxfjlcz",
               "labelTextSize": "0.875rem",
-              "defaultDate": "2023-04-18T20:41:08.088-04:00",
+              "defaultDate": "2023-04-18T21:19:37.3737-04:00",
               "isDeprecated": false,
               "rightColumn": 20,
               "widgetId": "is8fgknf74",
@@ -195,10 +203,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "yAxisName": "Revenue($)",
+              "yAxisName": "",
               "chartName": "Statistics for {{SalesDashDateSelection.formattedDate}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
+              "xAxisName": "",
               "chartType": "COLUMN_CHART"
             }
           ]
