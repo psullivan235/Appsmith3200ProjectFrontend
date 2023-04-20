@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "post_reactions",
+    "name": "follow_request",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day/reaction"
+        "url": "web:4000/i/follows/{{1}}/{{Select_User.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n \"day\": \"2023-02-26\"\n}",
+      "body": "{\"Friend\": {{Friend.selectedOptionValue}}}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -42,24 +42,29 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
+      },
+      {
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1"
+      "1",
+      "Friend.selectedOptionValue",
+      "Select_User.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_post_reactions",
+  "id": "User Landing Page_follow_request",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_643f40a90c81326ba64cd099"
+  "gitSyncId": "643f1a6ca5584211b6af66af_64416d4a0c81326ba64cd0c5"
 }

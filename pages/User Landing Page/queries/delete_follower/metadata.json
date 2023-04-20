@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "post_reactions",
+    "name": "delete_follower",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day/reaction"
+        "url": "web:4000/i/follows/{{1}}/{{Select_User.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n \"day\": \"2023-02-26\"\n}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,10 +39,10 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
@@ -52,14 +52,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1"
+      "1",
+      "Select_User.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_post_reactions",
+  "id": "User Landing Page_delete_follower",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_643f40a90c81326ba64cd099"
+  "gitSyncId": "643f1a6ca5584211b6af66af_644176875bed9b5bc6442c36"
 }

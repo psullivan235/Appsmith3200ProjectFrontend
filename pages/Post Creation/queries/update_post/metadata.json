@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "create_sponsorship",
+    "name": "update_post",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/follows/<InfluencerUserID>/<FollowerUserID>"
+        "url": "web:4000/i/posts/{{1}}/day"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Landing Page",
+    "pageId": "Post Creation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
+      "body": "{\n \"day\": \"2023-02-26\",\n\t\"Content\": {{new_content.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -39,21 +39,28 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "1",
+      "new_content.inputText"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_create_sponsorship",
+  "id": "Post Creation_update_post",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_643f1b58a5584211b6af66b7"
+  "gitSyncId": "643f1a6ca5584211b6af66af_6441a8e25bed9b5bc6442c68"
 }

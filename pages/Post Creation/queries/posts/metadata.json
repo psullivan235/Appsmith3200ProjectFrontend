@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "post_reactions",
+    "name": "posts",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day/reaction"
+        "url": "web:4000/i/posts/{{1}}/day"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Landing Page",
+    "pageId": "Post Creation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -43,11 +43,7 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -59,7 +55,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_post_reactions",
+  "id": "Post Creation_posts",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_643f40a90c81326ba64cd099"
+  "gitSyncId": "643f1a6ca5584211b6af66af_644191d75bed9b5bc6442c4f"
 }

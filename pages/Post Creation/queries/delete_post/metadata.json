@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "post_reactions",
+    "name": "delete_post",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day/reaction"
+        "url": "web:4000/i/posts/{{1}}/day"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Landing Page",
+    "pageId": "Post Creation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -31,7 +31,7 @@
       "queryParameters": [],
       "body": "{\n \"day\": \"2023-02-26\"\n}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -42,12 +42,8 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -59,7 +55,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_post_reactions",
+  "id": "Post Creation_delete_post",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_643f40a90c81326ba64cd099"
+  "gitSyncId": "643f1a6ca5584211b6af66af_6441a9c25bed9b5bc6442c6a"
 }
