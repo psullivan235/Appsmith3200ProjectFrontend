@@ -1272,8 +1272,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Select_Login.selectedOptionValue",
-                "DateSelection.formattedDate"
+                "DateSelection.formattedDate",
+                "Select_Login.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -1283,8 +1283,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Select_Login.selectedOptionValue",
-                "DateSelection.formattedDate"
+                "DateSelection.formattedDate",
+                "Select_Login.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
