@@ -1,4 +1,6 @@
 {
- "day": "2023-02-26",
-	"Content": {{new_content.inputText}}
+	"day": {{DateSelection.formattedDate}},
+	"Likes": {{posts.data[0].Likes}},
+	"Views": {{posts.data[0].Likes}},
+	"Content": {{new_content.text}}
 }

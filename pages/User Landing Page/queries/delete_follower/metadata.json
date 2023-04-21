@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/follows/{{1}}/{{Select_User.selectedOptionValue}}"
+        "url": "web:4000/i/follows/{{Select_Login.selectedOptionValue}}/{{Select_User.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1",
+      "Select_Login.selectedOptionValue",
       "Select_User.selectedOptionValue"
     ],
     "userSetOnLoad": false,

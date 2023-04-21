@@ -1,0 +1,4 @@
+{
+ "day": {{DateSelection.formattedDate}},
+	"Content": {{new_content.inputText}}
+}

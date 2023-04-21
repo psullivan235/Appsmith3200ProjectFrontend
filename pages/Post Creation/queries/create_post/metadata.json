@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "follow_request",
+    "name": "create_post",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/follows/{{Select_User.selectedOptionValue}}/{{Select_Login.selectedOptionValue}}"
+        "url": "web:4000/i/posts/{{Select_Login.selectedOptionValue}}/day"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Landing Page",
+    "pageId": "Post Creation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\"Friend\": {{Friend.selectedOptionValue}}}",
+      "body": "{\n \"day\": {{DateSelection.formattedDate}},\n\t\"Content\": {{new_content.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -55,16 +55,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Friend.selectedOptionValue",
+      "DateSelection.formattedDate",
       "Select_Login.selectedOptionValue",
-      "Select_User.selectedOptionValue"
+      "new_content.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Landing Page_follow_request",
+  "id": "Post Creation_create_post",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_64416d4a0c81326ba64cd0c5"
+  "gitSyncId": "643f1a6ca5584211b6af66af_6441a8e25bed9b5bc6442c68"
 }

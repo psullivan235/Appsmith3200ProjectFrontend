@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day/reaction"
+        "url": "web:4000/i/posts/{{Select_Login.selectedOptionValue}}/day/reaction"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n \"day\": \"2023-02-26\"\n}",
+      "body": "{\n \"day\": {{DateSelection.formattedDate}}\n}",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -46,13 +46,17 @@
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
+      },
+      {
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1"
+      "DateSelection.formattedDate",
+      "Select_Login.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

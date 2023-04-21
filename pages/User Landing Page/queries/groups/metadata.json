@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/GroupMemberships/{{1}}"
+        "url": "web:4000/i/GroupMemberships/{{Select_Login.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1"
+      "Select_Login.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

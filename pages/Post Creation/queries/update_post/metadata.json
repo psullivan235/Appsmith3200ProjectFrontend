@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/i/posts/{{1}}/day"
+        "url": "web:4000/i/posts/{{Select_Login.selectedOptionValue}}/day"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n \"day\": \"2023-02-26\",\n\t\"Content\": {{new_content.inputText}}\n}",
+      "body": "{\n\t\"day\": {{DateSelection.formattedDate}},\n\t\"Likes\": {{posts.data[0].Likes}},\n\t\"Views\": {{posts.data[0].Likes}},\n\t\"Content\": {{new_content.text}}\n}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -52,8 +52,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "1",
-      "new_content.inputText"
+      "DateSelection.formattedDate",
+      "Select_Login.selectedOptionValue",
+      "new_content.text",
+      "posts.data[0].Likes"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -62,5 +64,5 @@
   },
   "id": "Post Creation_update_post",
   "deleted": false,
-  "gitSyncId": "643f1a6ca5584211b6af66af_6441a8e25bed9b5bc6442c68"
+  "gitSyncId": "643f346555c4d051342d79e8_6441d082a370690e8a7292d5"
 }
