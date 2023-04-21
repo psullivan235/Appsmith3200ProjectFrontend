@@ -5,7 +5,7 @@ This app is built using Appsmith. Turn any datasource into an internal app in mi
 ![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
 
 # Project Overview
-Livejournal is a social media platform designed to allow users to create on journal style post per day.
+Livejournal is a social media platform designed to allow users to create one journal style post per day.
 
 # Page Overview
 ## User landing page
